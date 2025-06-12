@@ -154,7 +154,7 @@ while True:  # Inicia um loop infinito que só será interrompido pela escolha d
 # # st.write("2. Carrega base de dados")
 # st.write("1. Fazer uma pergunta sobre o projeto")
 # st.write("2. Limpar")
-# # st.write("3. Criar base de dados")
+# st.write("3. Criar base de dados")
 
     escolha = input("Digite sua opção (1 , 2 , 3 ou 4): ").strip()  # Captura a escolha do usuário e remove espaços em branco.
 
@@ -180,8 +180,8 @@ while True:  # Inicia um loop infinito que só será interrompido pela escolha d
         print("Vector Store carregado com sucesso!!!")
 
     elif escolha == '3':
-        # pergunta = input("Digite sua pergunta:")
-        pergunta = st.text_input("Digite sua pergunta: ")
+        pergunta = input("Digite sua pergunta:")
+        # pergunta = st.text_input("Digite sua pergunta: ")
         vectorstore = FAISS.load_local(diretorio_vectorestore_faiss, embeddings_model, allow_dangerous_deserialization=True)
         chat = ChatOpenAI(model=modelo)
         chat_chain = RetrievalQA.from_chain_type(
@@ -197,9 +197,10 @@ while True:  # Inicia um loop infinito que só será interrompido pela escolha d
         # st.write(resposta_formatada)
 
     elif escolha == '4':
-        st.write("Saindo do programa. Até mais!")  # Mensagem de despedida.
+        print("Saindo do programa. Até mais!")  # Informa o usuário sobre uma entrada inválida.
+        # st.write("Saindo do programa. Até mais!")  # Mensagem de despedida.
 
 
     else:
-        print("Opção inválida. Por favor, digite 1 ou 2.")  # Informa o usuário sobre uma entrada inválida.
+        print("Opção inválida!")  # Informa o usuário sobre uma entrada inválida.
         # st.write("Opção inválida. Por favor, digite 1 ou 2.")  # Informa o usuário sobre uma entrada inválida.
