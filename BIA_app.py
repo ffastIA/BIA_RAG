@@ -440,7 +440,9 @@ if not openai_key:
 modelo = 'gpt-3.5-turbo-0125'  # Qual modelo do ChatGPT usar
 embeddings_model = OpenAIEmbeddings()  # Modelo para converter texto em números
 
-# Configurações de arquivos e diretórios
+# Configurações de arquivos e diretórios. Essa configuração visa a distribuição via streamlit no github
+# A vector store é criada antecipadamente em uma versão local e na distribuição não há como o usuário
+#incluir arquivos manualmente. Ele só pode consultar
 diretorio_vectorestore_faiss = 'vectorestore_faiss'  # Onde salvar o banco vetorial
 caminho_arquivo = r'BIA_RAG.pdf'  # Caminho do PDF para analisar
 
