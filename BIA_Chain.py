@@ -29,9 +29,9 @@ st.set_page_config(
 
 # ============================ CHAVES DO SISTEMA ===============================
 # chave para deploy
-deploy = False #False == versão local / True == versão deploy
+deploy = True #False == versão local / True == versão deploy
 #chve para criação de vector store
-cria_vector = True #False == só carrega a vector store / True == cria a vector store
+cria_vector = False #False == só carrega a vector store / True == cria a vector store
 # ===============================================================================
 
 # Tenta pegar a chave da API da OpenAI de duas formas diferentes
