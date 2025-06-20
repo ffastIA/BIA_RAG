@@ -298,7 +298,7 @@ else:
 st.title("🐟 Biometria Inteligente para Aquicultura")
 st.markdown("""
 Esta aplicação permite que você analise o projeto BIA usando Inteligência Artificial.
-Faça perguntas sobre sua aplicação e indicadores de investimento e retorno financeiro!
+Faça perguntas sobre sua aplicação, benefícios e indicadores financeiros!
 """)
 
 # =============================== PIPELINE =================================
