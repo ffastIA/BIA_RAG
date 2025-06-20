@@ -50,7 +50,7 @@ if not api_key:
 # -----------------------------------------------------------------------------
 # 1. DEFINIÇÕES GERAIS
 # -----------------------------------------------------------------------------
-"""  Definições gerais (variáveis de sistema, modelo, vectorstore, arquivos, ...) """
+#"""  Definições gerais (variáveis de sistema, modelo, vectorstore, arquivos, ...) """
 
 # Define a chave API como variável de ambiente
 os.environ["OPENAI_API_KEY"] = api_key
@@ -80,7 +80,7 @@ qtd_retriever = 4
 # -----------------------------------------------------------------------------
 # 2. PROMPTS
 # -----------------------------------------------------------------------------
-"""  Prompts """
+#"""  Prompts """
 
 # Template para pergunta original
 prompt_inicial = ChatPromptTemplate.from_template("""
@@ -109,7 +109,7 @@ translation_prompt = ChatPromptTemplate.from_template("""
 # -----------------------------------------------------------------------------
 # 3. FUNÇÕES
 # -----------------------------------------------------------------------------
-"""  Funções """
+#"""  Funções """
 
 def cria_vector_store_faiss(chunk: list[Document], diretorio_vectorestore_faiss:str) -> FAISS:
     """
