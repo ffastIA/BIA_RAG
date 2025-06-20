@@ -362,7 +362,7 @@ def qa_chain_complete(query):
 # ================================================
 
 st.markdown("---")
-st.header("💬 Chat com o Documento")
+st.header("💬 Converse com o BIA!")
 
 # Inicializa o histórico de mensagens se não existir
 if "messages" not in st.session_state:
