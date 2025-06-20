@@ -154,7 +154,12 @@ def carrega_vector_store_faiss(diretorio_vectorestore_faiss, embedding_model):
         vectorstore: O banco de dados carregado
     """
     # Carrega o banco vetorial do disco rígido
-    vector_store = FAISS.load_local(diretorio_vectorestore_faiss, embedding_model)
+    vector_store = FAISS.load_local(
+        diretorio_vectorestore_faiss,
+        embedding_model,
+        allow_dangerous_deserialization=True
+    )
+
     return vector_store
 
 
