@@ -18,7 +18,8 @@ import uuid  # Para gerar IDs únicos de sessão
 st.set_page_config(
     page_title="BIA",  # Título que aparece na aba do navegador
     page_icon="🐟",  # Ícone que aparece na aba
-    layout="wide"  # Usa toda a largura da tela
+    layout="wide",  # Usa toda a largura da tela
+    initial_sidebar_state = "collapsed"  # esconde a barra lateral por padrão
 )
 # =====================================================================================
 
