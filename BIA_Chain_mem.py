@@ -430,7 +430,8 @@ def qa_chain_complete_with_memory(query: str, session_id: str):
 # ================================================
 
 st.markdown("---")
-st.header("💬 Converse com o projeto BIA!")
+#st.header("💬 Converse com o projeto BIA!")
+st.header("💬 Converse com o Prof. Tilap-IA!")
 
 #Inicializa session_id e garante que seja adicionado ao store
 if "session_id" not in st.session_state:
